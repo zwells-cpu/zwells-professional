@@ -628,6 +628,27 @@
     color: #7a6560;
   }
 
+  .skill-title {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #B8896B;
+    margin-bottom: 6px;
+  }
+
+  .skill-desc {
+    font-size: 0.95rem;
+    color: #3A2E2A;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding-bottom: 16px;
+  }
+
+  #competencies .skill-desc:last-child {
+    margin-bottom: 0;
+  }
+
   /* ── PROFESSIONAL DEVELOPMENT ── */
   .cert-row {
     display: flex;
@@ -692,15 +713,15 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
-  a {
-  color: #C08A7A;
-  text-decoration: none;
-}
+  footer a {
+    color: #D6A77A; /* soft gold */
+    text-decoration: none;
+  }
 
-a:hover {
-  color: #D9A89A;
-  text-decoration: underline;
-}
+  footer a:hover {
+    color: #E6C3A3;
+    text-decoration: underline;
+  }
 
   /* ── PRINT STYLES ── */
   @media print {
@@ -923,36 +944,35 @@ Served as a high-trust operational partner during a period of organizational gro
       <span class="section-line"></span>
     </div>
 
-<p><strong>Executive Operations</strong><br>
-Support executive leadership by building structure, improving visibility, and ensuring day-to-day operations run with clarity and efficiency.</p>
+<p class="skill-title">Executive Operations</p>
+<p class="skill-desc">Support executive leadership by building structure, improving visibility, and ensuring day-to-day operations run with clarity and efficiency.</p>
 
-<p><strong>Workflow Design</strong><br>
-Design and implement structured workflows that reduce friction, improve consistency, and support scalable operations across teams.</p>
+<p class="skill-title">Workflow Design</p>
+<p class="skill-desc">Design and implement structured workflows that reduce friction, improve consistency, and support scalable operations across teams.</p>
 
-<p><strong>Cross-Functional Coordination</strong><br>
-Align clinical, administrative, and leadership stakeholders to ensure smooth communication and execution across multiple workstreams.</p>
+<p class="skill-title">Cross-Functional Coordination</p>
+<p class="skill-desc">Align clinical, administrative, and leadership stakeholders to ensure smooth communication and execution across multiple workstreams.</p>
 
-<p><strong>Process Improvement</strong><br>
-Identify operational gaps and implement practical solutions that streamline systems, reduce redundancy, and improve performance.</p>
+<p class="skill-title">Process Improvement</p>
+<p class="skill-desc">Identify operational gaps and implement practical solutions that streamline systems, reduce redundancy, and improve performance.</p>
 
-<p><strong>Reporting & Dashboards</strong><br>
-Translate operational data into clear, usable insights through dashboards and tracking systems that support better decision-making.</p>
+<p class="skill-title">Reporting &amp; Dashboards</p>
+<p class="skill-desc">Translate operational data into clear, usable insights through dashboards and tracking systems that support better decision-making.</p>
 
-<p><strong>Executive Communication</strong><br>
-Develop polished documentation, training materials, and internal communications that present complex information with clarity and precision.</p>
+<p class="skill-title">Executive Communication</p>
+<p class="skill-desc">Develop polished documentation, training materials, and internal communications that present complex information with clarity and precision.</p>
 
-<p><strong>Digital Development</strong><br>
-Build and deploy internal tools using React, Vite, Supabase, PostgreSQL, GitHub, and Vercel, with a focus on usability and real-world application.</p>
+<p class="skill-title">Digital Development</p>
+<p class="skill-desc">Build and deploy internal tools using React, Vite, Supabase, PostgreSQL, GitHub, and Vercel, with a focus on usability and real-world application.</p>
 
-<p><strong>Systems Thinking</strong><br>
-Approach problems holistically by designing interconnected systems that improve workflow visibility, coordination, and long-term efficiency.</p>
+<p class="skill-title">Systems Thinking</p>
+<p class="skill-desc">Approach problems holistically by designing interconnected systems that improve workflow visibility, coordination, and long-term efficiency.</p>
 
-<p><strong>Digital File Architecture</strong><br>
-Structure and maintain organized, scalable file systems that support compliance, accessibility, and operational consistency.</p>
+<p class="skill-title">Digital File Architecture</p>
+<p class="skill-desc">Structure and maintain organized, scalable file systems that support compliance, accessibility, and operational consistency.</p>
 
-<p><strong>Compliance & Training</strong><br>
-Develop and maintain HIPAA-compliant documentation and training systems to support accurate and responsible handling of sensitive information.</p>
-    </div>
+<p class="skill-title">Compliance &amp; Training</p>
+<p class="skill-desc">Develop and maintain HIPAA-compliant documentation and training systems to support accurate and responsible handling of sensitive information.</p>
   </section>
 
   <!-- PROFESSIONAL DEVELOPMENT -->
@@ -995,9 +1015,6 @@ I’m currently open to executive operations, strategic support, and systems-foc
 <p>
 If my background aligns with your needs, I’d be glad to connect.
 </p>
-    .contact-section a {
-  color: #D6A77A;
-}
 <p>Email: <a href="mailto:hello@zanteriawells.com">hello@zanteriawells.com</a></p>
 <p>LinkedIn: <a href="https://www.linkedin.com/in/zanteriawells/" target="_blank">View Profile</a></p>
   </div>

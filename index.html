@@ -416,24 +416,35 @@
     padding: 40px;
   }
 
-  .project-problem {
+  .project-lead {
     background: #fdf8f6;
     border-left: 3px solid var(--gold);
     padding: 20px 24px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
     font-size: 14px;
     line-height: 1.7;
     color: #3d2e28;
   }
 
-  .project-problem strong {
+  .project-section + .project-section {
+    margin-top: 20px;
+  }
+
+  .project-label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--gold);
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
+  }
+
+  .project-copy {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #3d2e28;
+    max-width: 75ch;
   }
 
   .features-grid {
@@ -884,23 +895,34 @@
       </div>
 
       <div class="project-body">
-        <div class="project-problem">
-        <p><strong>Independently scoped, designed, and deployed a production intake and operations portal to centralize workflows and give leadership real-time visibility into referral activity.</strong></p>
+        <p class="project-lead">I independently scoped, designed, and deployed a production intake and operations portal to centralize workflows and give leadership real-time visibility into referral activity.</p>
 
-<p><strong>The Challenge</strong><br>
-Fragmented spreadsheets, email threads, and manual follow-ups created bottlenecks, inconsistent workflows, and limited visibility into referral status across the organization.</p>
+        <div class="project-section">
+          <p class="project-label">The Challenge</p>
+          <p class="project-copy">Fragmented spreadsheets, email threads, and manual follow-ups created bottlenecks, inconsistent workflows, and limited visibility into referral status across the organization.</p>
+        </div>
 
-<p><strong>What I Built</strong><br>
-A custom intake and operations portal that centralizes referral tracking, supports stage-based workflow movement, and provides a single source of truth for client progression across the intake lifecycle.</p>
+        <div class="project-section">
+          <p class="project-label">What I Built</p>
+          <p class="project-copy">A custom intake and operations portal that centralizes referral tracking, supports stage-based workflow movement, and provides a single source of truth for client progression across the intake lifecycle.</p>
+        </div>
 
-<p><strong>My Role</strong><br>
-Owned the project end-to-end, including workflow design, feature planning, data structure decisions, UI direction, build coordination, deployment, and iteration in a live environment.</p>
+        <div class="project-section">
+          <p class="project-label">My Role</p>
+          <p class="project-copy">Owned the project end-to-end, including workflow design, feature planning, data structure decisions, UI direction, build coordination, deployment, and iteration in a live environment.</p>
+        </div>
 
-<p><strong>Technology Used</strong><br>
-React · Vite · Supabase · PostgreSQL · GitHub · Vercel</p>
+        <div class="project-section">
+          <p class="project-label">Technology Used</p>
+          <p class="project-copy">React · Vite · Supabase · PostgreSQL · GitHub · Vercel</p>
+        </div>
 
-<p><strong>Business Impact</strong><br>
-Centralized 52 active referrals, improved intake visibility across multiple workflow stages, supported 28+ staff members, and replaced fragmented tracking methods with a scalable in-house solution at zero vendor cost.</p>
+        <div class="project-section">
+          <p class="project-label">Business Impact</p>
+          <p class="project-copy">Centralized 52 active referrals, improved intake visibility across multiple workflow stages, supported 28+ staff members, and replaced fragmented tracking methods with a scalable in-house solution at zero vendor cost.</p>
+        </div>
+      </div>
+    </div>
 
   <!-- EXPERIENCE -->
   <section id="experience">

@@ -150,7 +150,7 @@
     color: rgba(250,247,244,0.75);
     max-width: 480px;
     line-height: 1.7;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .header-meta {
@@ -278,8 +278,9 @@
 
   .about-body {
     font-size: 14px;
-    line-height: 1.8;
-    color: #3d2e28;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #2e2420;
   }
 
   .skills-grid {
@@ -422,8 +423,9 @@
     padding: 20px 24px;
     margin-bottom: 28px;
     font-size: 14px;
-    line-height: 1.7;
-    color: #3d2e28;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #2e2420;
   }
 
   .project-section + .project-section {
@@ -433,17 +435,19 @@
   .project-label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
+    font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--accent-light);
     display: block;
     margin-bottom: 7px;
   }
 
   .project-copy {
     font-size: 14px;
-    line-height: 1.75;
-    color: #3d2e28;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #2e2420;
     max-width: 75ch;
   }
 
@@ -471,8 +475,9 @@
 
   .feature-text {
     font-size: 13px;
-    color: #3d2e28;
-    line-height: 1.6;
+    font-weight: 400;
+    color: #2e2420;
+    line-height: 1.75;
   }
 
   .tech-stack {
@@ -586,8 +591,9 @@
 
   .timeline-desc {
     font-size: 13px;
-    line-height: 1.8;
-    color: #3d2e28;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #2e2420;
     max-width: 620px;
   }
 
@@ -649,9 +655,10 @@
 
   .skill-desc {
     font-size: 0.95rem;
-    color: #3A2E2A;
+    font-weight: 400;
+    color: #2e2420;
     margin-bottom: 24px;
-    line-height: 1.6;
+    line-height: 1.75;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     padding-bottom: 16px;
   }
@@ -767,7 +774,72 @@
   .header-eyebrow { animation: fadeUp 0.6s ease both; }
   .header-name { animation: fadeUp 0.6s 0.1s ease both; }
   .header-tagline { animation: fadeUp 0.6s 0.2s ease both; }
+  .hero-cta { animation: fadeUp 0.6s 0.28s ease both; }
   .header-meta { animation: fadeUp 0.6s 0.3s ease both; }
+
+  /* ── HERO CTA ── */
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201,149,127,0.35);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .hero-cta::after {
+    content: '→';
+    font-size: 12px;
+    transition: transform 0.2s;
+  }
+
+  .hero-cta:hover {
+    color: var(--paper);
+    border-bottom-color: rgba(250,247,244,0.4);
+  }
+
+  .hero-cta:hover::after {
+    transform: translateX(3px);
+  }
+
+  /* ── PROJECT CTAs ── */
+  .project-cta-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .project-cta {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(250,247,244,0.75);
+    text-decoration: none;
+    border: 1px solid rgba(250,247,244,0.2);
+    padding: 10px 18px;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+
+  .project-cta:hover {
+    color: var(--gold-light);
+    border-color: var(--gold-light);
+    background: rgba(176,125,110,0.08);
+  }
+
+  @media (max-width: 480px) {
+    .project-cta-group { flex-direction: column; }
+    .project-cta { text-align: center; }
+  }
 </style>
 </head>
 <body>
@@ -778,7 +850,8 @@
   <div class="header-text">
   <p class="header-eyebrow">Professional Portfolio · April 2026</p>
   <h1 class="header-name">Zanteria<br><em>Wells</em></h1>
-  <p class="header-tagline">Executive operations professional and digital systems builder turning fragmented workflows into scalable, high-visibility infrastructure.</p>
+  <p class="header-tagline">Executive operations professional building the systems behind scalable, high-visibility operations.</p>
+  <a class="hero-cta" href="#project">View Systems Built</a>
   <div class="header-meta">
     <div class="meta-item">
       <span class="meta-label">Current Role</span>
@@ -808,7 +881,7 @@
 <nav>
   <a href="#about">About</a>
   <a href="#impact">Impact</a>
-  <a href="#project">Flagship Project</a>
+  <a href="#project">Systems Built</a>
   <a href="#experience">Experience</a>
   <a href="#competencies">Key Skills</a>
   <a href="#education">Professional Development</a>
@@ -876,7 +949,7 @@
   <section id="project">
     <div class="section-header">
       <span class="section-number">02</span>
-      <h2 class="section-title">Flagship Project</h2>
+      <h2 class="section-title">Systems Built</h2>
       <span class="section-line"></span>
     </div>
 
@@ -886,6 +959,10 @@
           <p class="project-badge">Live Production · April 2026</p>
           <h3 class="project-title">BSOM Intake &<br>Operations Portal</h3>
           <p class="project-subtitle">Custom full-stack platform built independently for Behavioral Solutions of Mississippi</p>
+          <div class="project-cta-group">
+            <a class="project-cta" href="https://new-demo-portal.vercel.app" target="_blank" rel="noopener">View Live Demo</a>
+            <a class="project-cta" href="https://www.intakeportal.zanteriawells.com" target="_blank" rel="noopener">View Case Study</a>
+          </div>
         </div>
         <div class="project-timeline">
           <p class="timeline-label">Built in</p>
@@ -941,7 +1018,7 @@ Behavioral Solutions of Mississippi · Meridian, MS<br>
 2025 – Present</p>
 
 <p>
-Own the referral-to-authorization pipeline across multiple clinic locations while coordinating with clinical, billing, insurance, and leadership stakeholders. Independently designed and deployed the organization’s first custom intake portal, a production React/Supabase application that centralizes 52 active referrals and improves visibility across a six-stage intake lifecycle.
+Led referral-to-authorization operations across multi-site clinical workflows while independently designing and deploying the organization’s first custom intake operations platform.
 </p>
         </div>
       </div>

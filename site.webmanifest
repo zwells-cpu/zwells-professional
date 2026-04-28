@@ -1,0 +1,23 @@
+{
+  "name": "Zanteria Wells — Portfolio",
+  "short_name": "Zanteria Wells",
+  "description": "Executive operations professional building the systems behind scalable, high-visibility operations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#62102a",
+  "theme_color": "#62102a",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
